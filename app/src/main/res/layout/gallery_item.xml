@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="150dp"
     android:layout_marginBottom="8dp"
-    tools:context="com.novita.ela.caffe_in.GalleryFragment">
+    tools:context="com.novita.ela.cafe_in.GalleryFragment">
 
     <ImageView
         android:layout_width="match_parent"

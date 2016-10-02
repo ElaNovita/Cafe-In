@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.novita.ela.caffe_in.DetailCafeActivity">
+    tools:context="com.novita.ela.cafe_in.DetailCafeActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200dp">
@@ -58,7 +58,7 @@
         app:tabGravity="fill"
         app:theme="@style/ThemeOverlay.AppCompat.Dark"/>
     <android.support.v4.view.ViewPager
-        android:id="@+id/tabViewPager"
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />

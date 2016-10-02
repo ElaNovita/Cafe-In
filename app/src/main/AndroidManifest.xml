@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.novita.ela.caffe_in">
+    package="com.novita.ela.cafe_in">
 
     <application
         android:allowBackup="true"
@@ -8,14 +8,15 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.novita.ela.cafe_in.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetailCafeActivity"></activity>
+        <activity android:name="com.novita.ela.cafe_in.DetailCafeActivity" android:theme="@style/AppThemeActionBar"/>
+
     </application>
 
 </manifest>

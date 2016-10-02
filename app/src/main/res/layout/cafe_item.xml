@@ -1,81 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:padding="6dp"
+    android:layout_marginBottom="2dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <RelativeLayout
+        android:id="@+id/wrap"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <RelativeLayout
-            android:id="@+id/wrap"
-            android:layout_width="match_parent"
-            android:layout_height="200dp">
-            <ImageView
-                android:id="@+id/cafe_img"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/corner"
-                android:layout_alignParentTop="true"
-                android:scaleType="fitXY"/>
-            <ImageView
-                android:id="@+id/fav"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/star"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"/>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_alignParentBottom="true"
-                android:background="#96000000"
-                android:padding="8dp"
-                android:layout_marginBottom="8dp">
-                <ImageView
-                    android:id="@+id/time_icon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="8dp"
-                    android:src="@drawable/ic_access_time_white_24dp"/>
-                <TextView
-                    android:id="@+id/open_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="08:00 - 22.00"
-                    android:textStyle="bold"
-                    android:layout_marginTop="4dp"
-                    android:textColor="@android:color/white"/>
-            </LinearLayout>
+        android:layout_height="270dp">
 
-        </RelativeLayout>
-        <RelativeLayout
+        <ImageView
+            android:id="@+id/cafe_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/corner" />
+
+        <ImageView
+            android:id="@+id/fav"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/wrap"
-            android:padding="12dp">
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/star" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            android:background="#96000000"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/time_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_access_time_white_24dp" />
+
+            <TextView
+                android:id="@+id/open_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="08:00 - 22.00"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cafe_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_below="@id/cafe_img">
+
             <TextView
                 android:id="@+id/cafe_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Cafe Corner"
-                android:textSize="18sp"/>
+                android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/cafe_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jl Ismail Marzuki"
-                android:layout_below="@id/cafe_name"
-                android:layout_marginTop="6dp"/>
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/cafe_logo"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/logo"
-                android:layout_alignParentRight="true"/>
-        </RelativeLayout>
+                android:layout_marginTop="4dp"
+                android:text="Jl Ismail Marzuki" />
+        </LinearLayout>
     </RelativeLayout>
 
-</android.support.v7.widget.CardView>
+
+</RelativeLayout>

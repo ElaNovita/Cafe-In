@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="150dp"
-    tools:context="com.novita.ela.caffe_in.MenuFragment">
+    tools:context="com.novita.ela.cafe_in.MenuFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView
